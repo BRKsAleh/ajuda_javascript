@@ -1,0 +1,98 @@
+# ajuda_javascript
+tutorial de javascript
+<head>
+<meta charset = "UTF-8">
+</head>
+<body>
+<script>
+
+// Operadores de igualdade 
+
+var a = 9 !== 7  //true
+var b = 5 !== 5  //false
+var c = 7 == 7   //true
+
+//document.write(a + '<br>')
+//document.write(b + '<br>')
+//document.write(c + '<br>')
+
+//----------------------------------------------------------------
+
+//Operadores Logicos 
+
+  // Operador & 
+var kucoin = ((5>10) && (5<10))//Retornara false, pois só irá retornar  true caso todos forem verdadeiros 
+
+//document.write(kucoin + '<br>')
+
+  //Operador OU
+var cetacoin = ((5 > 8) || (11<10) || (8 == 8))//Retornara true, pois só irá retornar false caso todos forem false
+
+//document.write(cetacoin + '<br>')
+
+  //Operador Não 
+var picoin = (!(11<10))//Retornara true, pois sua função é negar
+
+//document.write(picoin)
+
+//---------------------------------------------------------------
+
+//Operador ternario
+var poneiCoin =  ((1>2 ? 'é maior' : 'é menor'))//Se for true ele executará oque vem a seguir do ponto de interrogação -- ":" serve como "se não" 
+
+//document.write(poneiCoin)
+
+//---------------------------------------------------------------
+
+//Operador de array
+let apareceAi = 'Isso vai aparecer na tela'
+
+let lista = ['coins',true,5,apareceAi]//Os valores podem ser booleano , string e numéricos 
+
+//document.write(lista.length + '<br>')
+//--length ele retorna a quantidade de elementos  que tem no array
+
+
+lista[2] = 'cinco'//Modificar o valor do elemento proposto 'seria o 2'
+
+lista.shift()//Apagar o primeiro elemento da lista 
+
+lista.pop()//Apagar o ultimo elemento da lista 
+
+lista.unshift(false)//Adiciona no inicio da lista e quantos você quiser
+
+lista.push(true,'false')//Adiciona no final e adiciona quantos você quiser
+
+lista.splice(1,1)//Apagar tal elemento definido até o proximo elemento exemplo : '1,5' então irá apagar do 1 ao 5
+
+//document.write(lista[1])
+//--Para acessar um valor 
+
+//---------------------------------------------------------------
+
+//Object {}
+
+let caneta = {cor : 'preto', marca : 'bic', 'tipo de objeto' : 'isqueiro'}//Um objeto se compoe por chave e valor e são separados por virgulas
+
+//document.write(caneta.marca)
+
+caneta.textura = 'cremoso'//Modo de adicionar variavel.(a chave que você quer) = valor 
+
+//document.write(caneta.textura)
+//-- Modos de se fazer a edição 
+
+//caneta.cor =  'azul' 
+//-- Modo 1 
+
+//caneta['marca'] = 'fabi'
+//-- Modo 2
+
+//let propriedade = 'marca'
+//caneta[propriedade] = 'faber'
+//-- Modo 3 
+
+document.write(caneta['tipo de objeto'])//Como pegar uma variavel classificada como string
+
+</script>
+
+</body>
