@@ -1,0 +1,89 @@
+# ajuda_javascript
+#RpgIsLife
+tutorial de javascript
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div></div>
+</body>
+</html>
+
+<style>
+  div
+  {
+     background: grey;
+     width:100px ;
+     height:100px ;
+
+  }
+</style>
+
+<script>
+
+
+  const party =
+  [
+    {
+      life:50,
+      strength:15,
+      agility:7,
+      armor:15,
+      mana:7,
+      nickname:'BRKsAleh'
+    }
+  ]
+
+  const backpack = []
+  const bestiary =
+  [
+    {
+      life:20,
+      strength:5,
+      agility:5,
+      armor:10,
+      mana:10,
+      nickname : 'walker'
+    },
+  ]
+
+  const places =
+  [
+    {
+      nickname:'ruins of an ancient kingdom',
+    },
+    {
+      nickname:'mountains of aslam',
+    },
+    {
+      nickname:'The eternal slayer',
+    },
+    {
+      nickname:'the wall of hunin'
+    }
+  ]
+
+  const state =
+  {
+    places : null
+  }
+  const start =  _ =>
+  {
+
+  }
+  const update = _ =>
+  {
+  console.log("bala")
+  window.requestAnimationFrame(update)
+  
+  }
+
+  update()
+</script>
